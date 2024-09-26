@@ -1,0 +1,27 @@
+body{
+    font-family: sans-serif;
+}
+
+/* h1{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+} */
+
+rect:hover{
+    fill:#F28E2A;
+    filter: drop-shadow(2px 1px 2px #888);
+}
+
+#value-container{
+    position: absolute;
+    visibility: hidden;
+    background-color:white;
+    padding: 5px;
+    border: 1px solid #F28E2A;
+    font-size: 14px;
+    border-radius: 5px;
+    z-index: 1;
+}

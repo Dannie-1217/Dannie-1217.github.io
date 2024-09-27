@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danni Chen's Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="css/project1.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/project1-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <noscript id="nojs">
+        <meta http-equiv = "refresh" content = "0; url = project1-nojs.html" />
+    </noscript>
+</head>
+
+<body>
+    <header>
+        <nav class="grid nav-grid">
+            <a class="a logo" href="homepage.html">DC</a>
+            <a class="b nav-link" href="homepage.html#about-section">About</a>
+            <a class="c nav-link" href="homepage.html#portfolio-section">Portfolio</a>
+            <a class="d nav-link" href="homepage.html#contact-section">Contact</a>
+            <div class="hamburger e">
+                <button class="hamburger-icon" aria-label="menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <a class="nav-link mobile-menu-element" href="homepage.html#about-section">About</a>
+            <a class="nav-link mobile-menu-element" href="homepage.html#portfolio-section">Portfolio</a>
+            <a class="nav-link mobile-menu-element" href="homepage.html#contact-section">Contact</a>
+        </div>
+
+    </header>
+
+   <main>
+        <h1>Melodic Ink</h1>
+        <h2>Interactive Art Installation with Techlogical System</h2>
+        <video width="1920" height="1080" controls aria-describedby="video-description">
+            <source src="video/project1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="video-description">
+            <h2>Video Description</h2>
+            <p>Three students are interacting with the melodic ink installation</p>
+        </div>
+        <p>For my IAT222 final project, inspired by Joo Youn Paek's innovative approach to merging technology and design, our team created an interactive art piece that combined visual, auditory, and physical elements.</p>
+
+        <section>
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>01</p>
+                    <p>Conceptualization</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <p>The project began with brainstorming sessions, where we aimed to create an artwork that not only engages viewers visually but also invites them to interact with it. We decided on incorporating circuits into a drawing, which would trigger sounds and lights when interacted with. The idea was to use technology to bring static art to life, much like Paek's work.</p>
+                    <div class="detail-img-wrapper">
+                        <a href="https://digitalartarchive.siggraph.org/artwork/joo-youn-paek-fold-loud/">
+                            <img src="img/step1.png" width="1920" height="1249" alt="Joo Youn Paek's work - Fold Loud">
+                            <p>Fold Loud. (2008, August). ACM SIGGRAPH art show archives.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>02</p>
+                    <p>Design and Prototyping</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <div>
+                        <p>We started by sketching the initial design. The drawing depicted several people playing instruments, with the circuit embedded in the artwork. We used Arduino boards, wires, LEDs, and reed switch to make the circuits, making sure they integrated seamlessly into the design. </p>
+                        <p>Participants need to place the chosen model on the painting. Correct placement triggers the instrument's music and lights up parts of the painting. Combining multiple instruments results in a harmonious musical piece. Therefore, there will be a lot of combination, with a full orchestra playing if five people participate simultaneously and make the placement right.</p>
+                    </div>
+                    <div class="detail-img-wrapper">
+                        <img src="img/step2-1.png" width="1920" height="1176" alt="The project painting with led light and reed switch">
+                        <img src="img/step2-2.png" width="1920" height="1110" alt="The project's interaction sketching">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>03</p>
+                    <p>Iteration and Development</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <p>We used Processing, a Java-based language, to create the interface for playing music. I also did the Arduino coding to control the physical installation, including the LED lights. The Arduino code read data from the circuits and transferred it to Processing, enabling communication between the two systems. Sensors triggered corresponding sounds and LEDs when the instrument model was brought close to the drawing. This required careful coding and calibration to synchronize responses.</p>
+                    <div class="detail-img-wrapper">
+                        <img src="img/step3-1.png" width="1920" height="1290" alt="Danni is testing the circuits with processing and arduino">
+                        <img src="img/step3-2.png" width="1920" height="1292" alt="The screenshot of Melodic Ink processing coding">
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="reveal">
+                <div class="grid step-grid step">
+                    <p>04</p>
+                    <p>Final Product</p>
+                </div>
+                <div class="project-detail-wrapper grid project-detail-wrapper-grid">
+                    <div></div>
+                    <p>The final project offered an engaging, multi-sensory experience through seamless technology integration. Using Processing for the music interface and Arduino for physical controls enabled smooth communication between software and hardware. This project showcased my ability to creatively integrate technology, highlighting my proficiency in programming and electronic components. It strengthened my skills in software development and hardware interfacing, proving my capability to handle complex projects.
+                    </p>
+                    <div class="detail-img-wrapper">
+                        <a href="https://www.youtube.com/watch?v=FVkyZ8a-cPU&t=1s">
+                            <img src="img/step4.png" width="1920" height="1208" alt="Go to YouTube page of Melodic Ink project">
+                            <p>Click to see the video</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="other-work reveal">
+            <h3>Other Work</h3>
+            <div class="grid other-work-grid">
+                <div>
+                    <a href="project1.html" class="grid card-container">
+                        <div class="project-img-wrapper">
+                            <img src="img/project2.jpg" height="1225" width="2232" alt="A webpage for clothing brand Garage">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="detail-wrapper">
+                            <h4>GARAGE WEB</h4>
+                            <p class="work-subtitle">Company Web Design and Development</p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="project1.html" class="grid card-container">
+                        <div class="project-img-wrapper">
+                            <img src="img/project3.jpg" height="1554" width="2762" alt="An electrical educational toy">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="detail-wrapper">
+                            <h4>ENVIROSAVER</h4>
+                            <p class="work-subtitle">Education Toy with Technological System</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="js/navigation.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/navigation-mobile.js"></script>
+</body>
+</html>

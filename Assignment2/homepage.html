@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danni Chen's Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+
+    <noscript id="nojs">
+        <meta http-equiv = "refresh" content = "0; url = homepage-nojs.html" />
+    </noscript>
+</head>
+
+<body>
+    <header>
+        <nav class="grid nav-grid">
+            <a class="a logo" href="homepage.html">DC</a>
+            <a class="b nav-link" href="#about-section">About</a>
+            <a class="c nav-link" href="#portfolio-section">Portfolio</a>
+            <a class="d nav-link" href="#contact-section">Contact</a>
+            <div class="hamburger e">
+                <button class="hamburger-icon" aria-label="menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <a class="nav-link mobile-menu-element" href="#about-section">About</a>
+            <a class="nav-link mobile-menu-element" href="#portfolio-section">Portfolio</a>
+            <a class="nav-link mobile-menu-element" href="#contact-section">Contact</a>
+        </div>
+
+        <div class="container">
+            <div class="grid welcome-grid welcome-content">
+                <div class="welcome-text">
+                    <h1>DANNI CHEN</h1>
+                    <h2>Seeking Web & Software Development or Interaction Design Position</h2>
+                    <div class="button-div" id="welcome-button">
+                        <a class="button" href="#contact-section">Contact Me</a>
+                    </div>
+                </div>
+                <div class="img-wrapper">
+                    <img id="girl-img" src="img/girl.png" width="3656" height="3728" alt="A girl is woking on her laptop">
+                </div>
+            </div>
+            <div class="background-text-wrapper">
+                <div class="background-text">
+                <p>Danni Chen Danni Chen Danni Chen</p>
+                <p>Danni Chen Danni Chen Danni Chen</p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section id="about-section">
+            <h3 class="reveal right">ABOUT</h3>
+                <div class="grid about-container-grid-part1">
+                    <div class="reveal left">
+                        <picture>
+                            <source media="(min-width: 80rem)" srcset="img/bio.png">
+                            <source media="(min-width: 48rem)" srcset="img/bio-1279.png">
+                            <source media="(min-width: 20rem)" srcset="img/bio-767.png">
+                            
+                            <img src="img/bio.png" width="803" height="724" alt="a photo of Danni Chen">
+                        </picture>
+                    </div>
+                    <div class="bio-container reveal right">
+                        <div class="bio-content-wrapper">
+                            <div class="hello-line-container">
+                                <p id="text-before-line">Hello</p>
+                                <div id="line"></div>
+                            </div>
+                            <div class="bio-main-text">
+                            <p id="bio-bold">BIOGRAPHY</p>
+                            <h4>My Personal Description</h4>
+                            <p>I am from Sichuan, China, and currently studying as an international student at Simon Fraser University. I am enrolled in the SIAT program, focusing on interactive systems, with a current GPA of 3.3.</p>
+                            <p>With a strong foundation in programming, including Java, JavaScript, C++, Processing, Arduino, HTML, and CSS, I navigate the digital landscapes as both creator and programmer. My passion lies in designing games and interactive installations that require technology. Additionally, my proficiency in UX and UI design also allows me to create user-centered designs that focus on usability,  accessibility, and overall satisfaction. I consistently excel in projects that demand a programming foundation, and I can integrate my knowledge of UX and UI to provide users with a more engaging digital experience. </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <h4 class="reveal">What Do I Do and How</h4>
+            <div class="grid about-container-grid-part2 interests-container reveal">
+                <div>
+                    <h5>Web Development</h5>
+                    <div class="grid interests-card-grid">
+                        <img src="img/web-icon.png" width="200" height="206" alt="Icon of Computer">
+                        <p>I design and develop websites using HTML, CSS, and JavaScript. This includes creating user-centered designs that focus on usability and accessibility, ensuring that users have a seamless and engaging experience.</p>
+                    </div>
+                </div>
+                <div>
+                    <h5>Game Development</h5>
+                    <div class="grid interests-card-grid">
+                        <img src="img/game-icon.png" width="200" height="197" alt="Icon of Game">
+                        <p>I create data-driven gameplay systems using C++, Java, and Processing. These projects demonstrate my ability to design interactions between users and the system, improving efficiency and enhancing the gaming experience.</p>
+                    </div>
+                </div>
+                <div>
+                    <h5>Software Development</h5>
+                    <div class="grid interests-card-grid">
+                        <img src="img/software-icon.png" width="200" height="204" alt="Icon of Java">
+                        <p>I have experience in both server-side and client-side development, enabling effective communication between the two ends. This includes handling server-client interactions, developing backend services, and ensuring smooth data exchange, which is crucial for creating robust and efficient applications.</p>
+                    </div>
+                </div>
+                <div>
+                    <h5>Interactive Systems Development</h5>
+                    <div class="grid interests-card-grid">
+                        <img src="img/interactive-icon.png" width="200" height="200" alt="Icon of Robot">
+                        <p>In my role as an interactive systems developer, I utilize technologies like Processing and Arduino to create interactive installations. These projects involve integrating hardware and software to develop immersive and interactive experiences, demonstrating my ability to bring innovative concepts to life through technology.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="portfolio-section" class="reveal">    
+            <h3>PORTFOLIO</h3>
+
+            <section class="portfolio-card">
+                <a href="project1.html" class=" grid portfolio-card-grid-left card-container">
+                    <div class="project-img-wrapper">
+                        <img src="img/project1.jpg" height="722" width="1284" alt="Three students are interacing with the installation">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="detail-wrapper">
+                        <h4>MELODIC INK</h4>
+                        <p class="work-subtitle">Interactive Art Installation with Techlogical System</p>
+                    </div>
+                </a>
+            </section>
+
+            <section class="portfolio-card">
+                <a href="project1.html" class=" grid portfolio-card-grid-right card-container">
+                    <div class="detail-wrapper  bottom-area">
+                        <h4>GARAGE WEB</h4>
+                        <p class="work-subtitle">Company Web Design and Development</p>
+                    </div>
+                    <div class="project-img-wrapper  top-area">
+                        <img src="img/project2.jpg" height="1225" width="2232" alt="A webpage for clothing brand Garage">
+                        <div class="overlay"></div>
+                    </div>
+                </a>
+            </section>
+
+            <section class="portfolio-card">
+                <a href="project1.html" class=" grid portfolio-card-grid-left card-container">
+                    <div class="project-img-wrapper">
+                        <img src="img/project3.jpg" height="1554" width="2762" alt="An electrical educational toy">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="detail-wrapper">
+                        <h4>ENVIROSAVER</h4>
+                        <p class="work-subtitle">Education Toy with Technological System</p>
+                    </div>
+                </a>
+            </section>
+        </section>
+
+        <section id="contact-section">
+            <h3 class="reveal">CONTACT</h3>
+            <div class="contact-part1 grid contact-part1-grid reveal">
+                <div class="lets-talk">
+                    <h4>LET'S TALK!</h4>
+                    <p>I am currently seeking a job to support myself, and I am eager to take on any opportunity related to interaction design and programming. If you need assistance, please feel free to contact me. I am always available and ready to work!</p>
+                    <div class="detail-information">
+                        <h5>Email Me At</h5>
+                        <p>dca158@sfu.ca</p>
+                        <p>danni1217@icloud.com</p>
+                        <h5>Call Me At</h5>
+                        <p>Canada: (+1) 778-998-1116</p>
+                        <p>China: (+86) 138-8000-6789</p>
+                        <h5>Mail Me At</h5>
+                        <p>13696 100th Ave, Surrey, BC, V3T 0L5 </p>
+                    </div>
+                    <div class="external-link">
+                        <a href="https://www.instagram.com/hagdbhas/" class="ins"><div class="instagram-icon"><img class="placeholder" src="img/instagram.png" width="30" height="30" alt="link to instagram page of Danni"></div></a>
+                        <a href="https://web.whatsapp.com/" class="whatsapp"><div class="whatsapp-icon"><img class="placeholder" src="img/whatsapp.png" width="30" height="30" alt="link to whatsapp page of Danni"></div></a>
+                        <a href="https://www.youtube.com/@user-vs5ty7dv6v" class="youtube"><div class="youtube-icon"><img class="placeholder" src="img/youtube.png" width="30" height="30" alt="link to youtube page of Danni"></div></a>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="contact-form">
+                        <form method="post" action="#">
+                            <label for="name" class="first-label">Name</label>
+                            <input type="text" id="name" placeholder="Jack Smith">
+                        </form>
+                        <form method="post" action="#">
+                            <label for="email">Email Address</label>
+                            <input type="text" id="email" placeholder="Jane@example.com">
+                        </form>
+                        <form method="post" action="#">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" placeholder="123-456-7890">
+                        </form>
+                        <form method="post" action="#">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Leave a comment."></textarea>
+                        </form>
+                        <div class="submit-div">
+                            <a class="submit-button" href="#contact-section">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    
+    <script src="js/navigation.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/navigation-mobile.js"></script>
+</body>
+</html>

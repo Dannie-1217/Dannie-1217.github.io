@@ -1,5 +1,5 @@
 ## HTML, CSS, and JS
 
-In this repository, we have prepared brief explanations of HTML, CSS, JS, and SVG. But you could also just look these up. 
+For my IAT339 project, I developed a personal website with two main pages, homepage.html and project1.html, which showcase my introduction, portfolio, and contact details. To enhance user experience, I incorporated CSS and JavaScript for both styling and animations, making the site more interactive and responsive across devices. On the homepage, I implemented button animations and a dynamic welcome page. Additionally, I created a drop-down menu specifically for mobile users, allowing for a smoother navigation experience on smaller screens.
 
-You should start with `HTML.md`, then move to `CSS.md`. `SVG.md` describes SVG which we will use alot in this class. And `JS.md` introduces to Javascript in the browser.
+On the visualization.html page, I designed a responsive bar chart that visualizes my screen time over the past week. The bars change color and feature a shadow effect when hovered over. I also used JavaScript to display more detailed information about each bar, with numerical values that dynamically follow the mouse cursor, creating an engaging and interactive data visualization. For my SVG creative arts, I drew two cute bears—one with a red bow and the other with a blue bow tie—on a yellow background.

@@ -1,0 +1,42 @@
+.step-grid{
+    grid-template-columns: 1fr 5fr;
+    
+}
+
+@media(min-width:20rem){
+    .project-detail-wrapper-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .other-work-grid{
+        grid-template-columns: 1fr;
+        gap:2rem;
+    }
+}
+
+@media(min-width:48rem){
+    .project-detail-wrapper-grid{
+        grid-template-columns: 1fr 3fr 2fr;
+        align-items: center;
+    }
+
+    .other-work-grid{
+        grid-template-columns: 1fr 1fr;
+        gap:4rem;
+    }
+}
+
+@media(min-width: 80rem){
+    .other-work-grid{
+        gap:5rem;
+    }
+}
+
+
+
+@media(min-width: 100rem){
+    .other-work-grid{
+        gap:8rem;
+    }
+}
+

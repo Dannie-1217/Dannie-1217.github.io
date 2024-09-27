@@ -1,0 +1,17 @@
+Citation List of Resume Page:
+
+Discover art collections. CleanPNG. (n.d.). https://www.cleanpng.com/ 
+Do something if screen width is less than 960 px. Stack Overflow. (1957, April 1). https://stackoverflow.com/questions/7715124/do-something-if-screen-width-is-less-than-960-px 
+Google. (n.d.). Bungee Shade. Google Fonts. https://fonts.google.com/specimen/Bungee+Shade 
+Google. (n.d.). Corinthia. Google Fonts. https://fonts.google.com/specimen/Corinthia 
+Google. (n.d.). Lato. Google Fonts. https://fonts.google.com/specimen/Lato 
+How to redirect if javascript is disabled?. Stack Overflow. (1955, September 1). https://stackoverflow.com/questions/2489376/how-to-redirect-if-javascript-is-disabled 
+Mandali font. Font.Download | Font.Download. (n.d.). https://font.download/font/mandali 
+MozDevNet. (n.d.-a). Aria-describedby - accessibility: MDN. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-describedby 
+W3schools.com. CSS flex-grow property. (n.d.). https://www.w3schools.com/cssref/css3_pr_flex-grow.php 
+YouTube. (2017, April 25). How to draw horizontal line & vertical line in website by HTML & CSS(Simple & Easy). YouTube. https://www.youtube.com/watch?v=hprsn7LkRzs 
+YouTube. (2020, February 21). Sticky navigation bar on scroll using Vanilla Javascript | Fixed navbar on scroll. YouTube. https://www.youtube.com/watch?v=6HFpw5fcaD8&t=133s 
+YouTube. (2020, October 31). Reveal website elements on scroll | on page scroll down - using HTML, CSS & javascript. YouTube. https://www.youtube.com/watch?v=VplDlwLTR50 
+YouTube. (2021, August 15). JavaScript - how to create a responsive hamburger menu with HTML, CSS, & javascript. YouTube. https://www.youtube.com/watch?v=flItyHiDm7E 
+YouTube. (2022, December 15). Infinite scrolling text with CSS. YouTube. https://www.youtube.com/watch?v=WFzquzZic2o 
+YouTube. (2022, June 26). CSS button hover effects | left to right hover effects | CSS hover effects @codehal . YouTube. https://www.youtube.com/watch?v=NiAbqxoKZOM 

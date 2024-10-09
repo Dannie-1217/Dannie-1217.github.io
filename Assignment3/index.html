@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite-api@5.6.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        
+     const options = {
+        config: {
+          // Vega-Lite default configuration
+        },
+        init: (view) => {
+          // initialize tooltip handler
+          view.tooltip(new vegaTooltip.Handler().call);
+        },
+        view: {
+          // view constructor options
+          // remove the loader if you don't want to default to vega-datasets!
+          loader: vega.loader({
+            baseURL: "https://cdn.jsdelivr.net/npm/vega-datasets@2/",
+          }),
+          renderer: "canvas",
+        },
+      };
+
+      // register vega and vega-lite with the API
+      vl.register(vega, vegaLite, options);
+      </script>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <h1>Data Visualization with Vega-Lite</h1>
+    <p id="subheading">IAT355 - Assignemnt 3</p>
+    <nav>
+      <a href="#part1" class="nav_button">Visualization1</a>
+      <a href="#part2" class="nav_button">Visualization2</a>
+      <a href="#part3" class="nav_button">Visualization3</a>
+      <a href="#part4" class="nav_button">Visualization4</a>
+    </nav>
+    <div class="container">
+      <!-- visualization goes into this div you can create multiple divs and give them IDs -->
+      <h2 id="part1">Visualization 1: Global Sales by Genre and Platform</h2>
+      <div id="view"></div>
+      <div id="view1"></div>
+
+      <h2 id="part2">Visualization 2: Sales Over Time by Platform and Genre</h2>
+      <div id="view2"></div>
+      <div id="view3"></div>
+
+      <h2 id="part3">Visualization 3: Regional Sales vs. Platform</h2>
+      <div id="view4"></div>
+
+      <h2 id="part4">Visualization 4: Total Sales of Super Mario Games by Region</h2>
+      <div id="view5"></div>
+  </div>
+    <script type="module" src="vis.js"></script>
+  </body>
+</html>

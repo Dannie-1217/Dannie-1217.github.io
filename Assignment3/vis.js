@@ -106,7 +106,7 @@ async function render4(){
     vl.facet().fieldN('sales_region').columns(2)
   )
   .width(400)
-  .height(400)
+  .height(300)
   .toSpec();
 
   vegaEmbed("#view4",vlSpec).then((result)=>{

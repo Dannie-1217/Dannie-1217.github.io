@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Mandali';
+    font-weight: normal;
+    src: 
+        url(../fonts/mandali.woff) format('woff'),
+        url(../fonts/mandali.woff2) format('woff2');
+    
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-weight: bold;
+    src: 
+        url(../fonts/lato-bold.woff) format('woff'),
+        url(../fonts/lato-bold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-weight: normal;
+    src: 
+        url(../fonts/lato-light.woff) format('woff'),
+        url(../fonts/lato-light.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Bungeeshade';
+    font-weight: normal;
+    src: 
+        url(../fonts/bungeeshade.woff) format('woff'),
+        url(../fonts/bungeeshade.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Corinthia';
+    font-weight: normal;
+    src: 
+        url(../fonts/corinthia.woff) format('woff'),
+        url(../fonts/corinthia.woff2) format('woff2');
+}

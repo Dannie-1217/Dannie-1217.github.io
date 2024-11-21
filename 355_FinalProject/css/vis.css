@@ -1,0 +1,82 @@
+* { box-sizing: border-box; }
+
+body{
+    font-family: 'Mandali', Verdana, sans-serif;
+    line-height: 1;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+.logo{
+    padding-left: 1rem;
+    font-family: 'Bungeeshade', Verdana, sans-serif;
+}
+
+nav{
+    text-align: center;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    padding:1.2rem 1rem 1rem;
+}
+
+#home_link{
+    padding-right: 3rem;
+}
+
+#vis_link{
+    padding-right: 1.5rem;
+    color:#f44e21;
+}
+
+h1{
+    margin-top: 0;
+    padding-top: 3rem;
+    letter-spacing: 0.15rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.nav_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.nav_button{
+    color:black;
+    font-weight: normal;
+    font-size: 1rem;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    text-align: center;
+    display: inline-block;
+    margin: 0.3rem 2rem;
+    border:1px solid black;
+    width:12rem;
+}
+
+.nav_button:hover,.nav_button:focus{
+    color:black;
+    background-color: orange;
+}
+
+h2{
+    font-family: 'Lato', Verdana, sans-serif;
+    font-weight: normal;
+    padding-top: 3rem;
+    text-align:center;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    margin-top:1rem;
+    padding-bottom: 0.5rem;
+}

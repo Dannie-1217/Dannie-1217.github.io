@@ -1,0 +1,11 @@
+.grid{
+    display: grid;
+}
+
+.welcome_grid{
+    grid-template-columns: 2.5fr 1.5fr;
+}
+
+.main_container_grid{
+    grid-template-columns: 1fr 2fr;
+}

@@ -15,17 +15,27 @@ a{
     font-family: 'Bungeeshade', Verdana, sans-serif;
 }
 
+.logo:hover, .logo:focus{
+    color:#f44e21;
+    text-decoration: none;
+}
+
 nav{
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
     display: flex;
     justify-content: space-between;
     padding:1.2rem 1rem 1rem;
 }
 
+nav a:hover, nav a:focus{
+    text-decoration: underline;
+}
+
 #home_link{
     padding-right: 3rem;
 }
+
 
 #vis_link{
     padding-right: 1.5rem;

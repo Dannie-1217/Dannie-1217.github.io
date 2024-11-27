@@ -51,16 +51,28 @@
         </div>
 
         <h2 id="part1">Wage Growth by Industry</h2>
-        <div id="view1"></div>
+        <div class="visContainer_two_columns">
+            <div id="view1"></div>
+            <p id="vis1Text">We aim to create a bar chart that visualizes wage growth across different years by comparing areas rather than stacking the bars segment by segment. In other words, instead of bulding each year's data upon the previous year's, we want to start all yearly wages from the x-axis so we can easily see the growth. Besides, we will also sort the bar chart according to the wage as well.</p>
+        </div>
 
         <h2 id="part2">CPI Growth by Category</h2>
-        <div id="view2"></div>
+        <div class="visContainer_two_columns">
+            <p id="vis2Text">We find this line chart is not that easy to differentiate each category as there are too many lines overlap. We are thinking make the line chart interactive, we may remain the lines of category contains "all-items" always on the chart and allow users to choose other categories. Besides, we will adjust the scale of the CPI axis, allowing changes in values to result in more noticeable variations. </p>
+            <div id="view2"></div>
+        </div>
 
         <h2 id="part3">Household Spending Distribution</h2>
-        <div id="view3"></div>
+        <div class="visContainer_one_column">
+            <div id="view3"></div>
+            <p class="visText">We have 5 pie charts to show the different income level groups spending distribution. We find that there are too many colors and we can't read the small slices of these pie charts. Therefore, we're thinking that filter out several the most important categories and show the distribution. We are also designing the layout of the 5 pie charts.</p>
+        </div>
 
         <h2 id="part4">Weighted CPI Growth vs Wage Growth</h2>
-        <div id="view4"></div>
+        <div class="visContainer_one_column">
+            <div id="view4"></div>
+            <p class="visText">For this visualization, we plan to do a trivariate bubble chart with scaling bubble size and two colors. This chart will integrate wage growth and CPI growth of different occupations across years. The bubble size will refer to the wage growth rate and CPI growth rate with different two colors. When the user hovers on the bubbles, they turn red when CPI growth exceeds wage growth in a category (negative impact), or green when wage growth surpasses CPI (positive impact), with percentage labels (e.g., “+3%” or “-3%”) for clarity. This chart can offer an at-a-glance view of the comparison between wage growth and CPI growth, enabling the user to immediately see whether their wage growth is sufficient or lacking.<br>We are still figuring out how to do this chart. This is just a draft.</p>
+        </div>
     </main>
     <script type="module" src="../355_FinalProject/vis.js"></script>
 </body>

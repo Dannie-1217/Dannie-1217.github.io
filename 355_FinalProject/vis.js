@@ -154,7 +154,7 @@ async function render2(transformedCPIData) {
       vl.color().fieldN("Category").title("Category"),
       vl.tooltip(["Category", "Year", "GrowthRate"])
     )
-    .width(600)
+    .width(500)
     .height(400)
     .toSpec();
 
@@ -170,7 +170,7 @@ async function render3(processedQuintileData) {
     .encode(
       vl.theta().fieldQ("Percentage"),
       vl.color().fieldN("Category").title("Category"),
-      vl.facet().fieldN("Quintile").columns(5),
+      vl.facet().fieldN("Quintile").columns(3),
       vl.tooltip(["Quintile", "Category", "Percentage"])
     )
     .width(150)

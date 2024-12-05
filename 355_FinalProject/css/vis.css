@@ -130,3 +130,19 @@ h2{
     font-family: 'Mandali', Verdana, sans-serif;
     line-height: 1.8;
 }
+
+#backButton {
+    background-color: #f44e21; 
+    color: white; 
+    border: none; 
+    padding: 0.3rem 1rem; 
+    font-size: 0.8rem; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    margin-top:1.2rem;
+    display:none;
+}
+
+#backButton:hover {
+    background-color: black;
+}

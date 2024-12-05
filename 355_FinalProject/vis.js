@@ -634,7 +634,8 @@ async function render1(newWageData) {
         legend: {
           orient: "right",
           symbolType: "square",
-          symbolSize: 100
+          symbolSize: 10,
+          title:"Year (Interactive)",
         }
       },
       order: {
@@ -686,7 +687,7 @@ async function render2(transformedCPIData) {
     .encode(
       vl.x().fieldN("Year").title("Year"),
       vl.y().fieldQ("GrowthRate").title("Growth Rate (%)"),
-      vl.color().fieldN("Category").title("Category"),
+      vl.color().fieldN("Category").title("Category (Interactive)"),
       vl.opacity().if(selection, vl.value(1)).value(0.1),
       vl.tooltip(["Category", "Year", "GrowthRate"])
     )
@@ -715,7 +716,7 @@ async function render3(processedQuintileData, quintileData) {
       .data(data)
       .title(
         currentLevel === "major"
-          ? "Household Spending Distribution by Quintile"
+          ? "Household Spending Distribution by Quintile (Slices are interactive)"
           : `Breakdown of ${selectedCategory} Spending`
       )
       .encode(

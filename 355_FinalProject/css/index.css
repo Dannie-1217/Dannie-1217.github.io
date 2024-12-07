@@ -43,7 +43,7 @@ nav a:hover, nav a:focus{
 }
 
 .container{
-    margin-top: 5%;
+    margin-top: 3rem;
     width:80%;
     margin-left:auto;
     margin-right: auto;
@@ -101,7 +101,7 @@ h2{
     text-align:center;
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
-    margin-top:2rem;
+    margin-top:4rem;
     padding-bottom: 0.5rem;
     text-align: center;
 }
@@ -126,7 +126,28 @@ h2{
     justify-self: end;
 }
 
-/* #image2{
-    width:80%;
+.icon_container{
+    margin-top: 4rem;
+    display: flex;
+    width:100%;
+}
+
+.icon_text{
+    font-size: 0.8rem;
+    /* text-align: center; */
+    margin-left: 1rem;
+}
+
+.icon{    
+    max-width: 2rem;
+    max-height: 2rem;
+}
+
+.icons{
+    display:flex;
+}
+
+#image2{
+    max-width: 50%;
     height:auto;
-} */
+}

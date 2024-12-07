@@ -908,8 +908,8 @@ async function render4(finalData) {
         "Average Wage",
       ])
     )
-    .width(800)
-    .height(600)
+    .width(600)
+    .height(400)
     .toSpec();
 
   await vegaEmbed("#view4", vlSpec);

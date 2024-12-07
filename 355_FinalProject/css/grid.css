@@ -3,9 +3,14 @@
 }
 
 .welcome_grid{
-    grid-template-columns: 2.5fr 1.5fr;
+    grid-template-columns: 2.5fr 2fr;
+    align-items:center;
 }
 
 .main_container_grid{
     grid-template-columns: 1fr 2fr;
+}
+
+.icon_grid{
+    grid-template-columns: 1fr 1fr 1fr;
 }

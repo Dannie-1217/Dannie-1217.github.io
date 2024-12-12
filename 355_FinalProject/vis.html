@@ -1,88 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IAT355_FinalProject</title>
-
-    <link rel="stylesheet" type="text/css" href="css/vis.css">
-    <link rel="stylesheet" type="text/css" href="css/grid.css">
-    <link rel="stylesheet" type="text/css" href="css/font.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite-api@5.6.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-
-    <script>
-        const options = {
-          config: {},
-          init: (view) => {
-            view.tooltip(new vegaTooltip.Handler().call);
-          },
-          view: {
-            loader: vega.loader({ baseURL: "https://cdn.jsdelivr.net/npm/vega-datasets@2/" }),
-            renderer: "canvas",
-          },
-        };
-  
-        vl.register(vega, vegaLite, options);
-      </script>
-</head>
-<body>
-    <header>
-        <nav>
-            <a class="logo" href="index.html">Z & C</a>
-            <div>
-                <a id="home_link" href="index.html">Home</a>
-                <a id="vis_link" href="vis.html">Visualizations</a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <h1>VISUALIZATIONS</h1>
-        <div class="nav_container">
-            <a href="#part1" class="nav_button">Wage Growth</a>
-            <a href="#part2" class="nav_button">CPI Growth</a>
-            <a href="#part3" class="nav_button">Spending Proportion</a>
-            <a href="#part4" class="nav_button">Wage vs CPI</a>
-        </div>
-        
-        <div>
-        <h2 id="part1">Wage Growth by Industry</h2>
-        <div class="visContainer_two_columns">
-            <div id="view1"></div>
-            <p id="vis1Text">This interactive bar chart displays the wage growth rate across various employment classifications over multiple years. The legend besides the chart is also served as the interactive button. Users can click on a single year or hold down the Shift key to select multiple years for comparison. This chart is not a stack bar chart, instead, each bar representing different classifications from different years, starts at the x-axis. This layout enables readers to easily compare values by observing the differences in bar heights. We are still thinking about highlighting the "Total employees, all industries" classification, so readers can easily compare the wage growth rate with the average growth rate of all classification.</p>
-        </div>
-
-        <h2 id="part2">CPI Growth by Category</h2>
-        <div class="visContainer_two_columns">
-            <p id="vis2Text">The interactive line chart illustrates the CPI growth rate across various categories, such as goods, energy, and gasoline. Similar to the bar chart, the legend on the right side also functions as an interactive control. Users can click on a single category or hold down the Shift key to select multiple categories for comparsion. </p>
-            <div id="view2"></div>
-        </div>
-
-        <h2 id="part3">Household Spending Distribution</h2>
-        <div class="visContainer_one_column">
-            <div id="view3"></div>
-            <button id="backButton">Back</button>
-            <p class="visText">We present five pie charts to illustrate the spending distribution across different income-level groups. In the previous milestone, we had too many categories, leading to too many colors and slices on the pie chart. This time, we consolidated them into six major categories. For each income group, the pie charts highlight the top five spending categories. Each slice of the pie chart is clickable, allowing users to explore the breadown of subcatefories within a selected major category. While the pie charts are now interactive, we are still working on processing subcategory data and displaying the detailed breadown in the charts.</p>
-        </div>
-       
-
-        <h2 id="part4">Weighted CPI Growth vs Wage Growth</h2>
-        <div class="visContainer_one_column">
-            <div id="view4"></div>
-            <p class="visText">The final chart will be a bubble chart, using bubble size and two colors to convey the impact of CPI growth rate and wage growth rate. This chart integrates wage growth rate and CPI growth rate. If the CPI growth rate exceeds the wage growth rate, the bubble will be red, indicating a negative impact. Conversely,Conversely, if the wage growth rate surpasses the CPI growth rate, the bubble will be green, representing a positive impact. The size of each bubble reflects the magnitude of the impact. <br><br>In the next progress, we will change the coordinate axes. The x-axis will represent employment classifications, while the y-axis will show the years. Users can filter the chart by selecting different income quintiles using buttons below the chart. This will highlight the corresponding bubbles, making it easy to explore the classifications within the selected group.</p>
-        </div>
-        
-    </main>
-    <script type="module" src="../355_FinalProject/vis.js"></script>
-</body>
-</html> -->
-
-
 
 
 
@@ -150,43 +65,143 @@
         <div class="nav_container">
             <a href="#part1" class="nav_button" onclick="showSection('part1')">Wage Growth</a>
             <a href="#part2" class="nav_button" onclick="showSection('part2')">CPI Growth</a>
-            <a href="#part3" class="nav_button" onclick="showSection('part3')">Spending Proportion</a>
             <a href="#part4" class="nav_button" onclick="showSection('part4')">Wage vs CPI</a>
         </div>
         
         <div id="part1" class="visContainer">
             <h2>Wage Growth by Industry</h2>
             <div class="visContainer_two_columns">
-                <div id="view1"></div>
-                <p id="vis1Text">This interactive bar chart displays the wage growth rate across various employment classifications over multiple years. The legend besides the chart is also served as the interactive button. Users can click on a single year or hold down the Shift key to select multiple years for comparison. This chart is not a stack bar chart, instead, each bar representing different classifications from different years, starts at the x-axis. This layout enables readers to easily compare values by observing the differences in bar heights. We are still thinking about highlighting the "Total employees, all industries" classification, so readers can easily compare the wage growth rate with the average growth rate of all classification.</p>
+                <div id="d1">
+                    <div id="view1"></div>
+                </div>
+                <p id="vis1Text">This interactive bar chart showcases wage trends across various occupations over the past five years, enabling clear identification of jobs with the highest wages. Users can compare data across different years by selecting specific timeframes. For instance:<br><br>
+                From 2019 to 2021, the "Information, Culture, and Recreation" sector likely experienced the highest wage growth due to the impacts of COVID-19. This period saw increased demand for digital content, online entertainment, and virtual services as people adapted to remote lifestyles.<br><br>
+                From 2019 to 2023, the "Professional, Scientific, and Technical Services" sector's wage growth reflects the rising demand for specialized skills in technology, engineering, and consultancy. The ongoing digital transformation and recovery-driven projects likely sustained this growth.</p>
             </div>
         </div>
 
         <div id="part2" class="visContainer">
             <h2>CPI Growth by Category</h2>
             <div class="visContainer_two_columns">
-                <p id="vis2Text">The interactive line chart illustrates the CPI growth rate across various categories, such as goods, energy, and gasoline. Similar to the bar chart, the legend on the right side also functions as an interactive control. Users can click on a single category or hold down the Shift key to select multiple categories for comparsion.</p>
-                <div id="view2"></div>
+                <div id="d2">
+                    <div id="view2"></div>
+                </div>
+                <p id="vis2Text">This interactive discount chart visualizes the CPI (Consumer Price Index) growth rate for various consumption categories over the past five years, offering a clear perspective on spending patterns. The chart allows users to compare CPI trends across different categories.Some interesting observations includes:<br><br>
+                The drastic fluctuation in gasoline CPI reflects global events, such as decreased demand during the COVID-19 lockdowns in 2020 and supply chain disruptions or increased demand in 2022.<br><br>
+                The stability in clothing and footwear CPI suggests a balance between supply and demand, possibly due to minimal production disruptions and consistent consumer purchasing behavior.
+                </p>      
             </div>
         </div>
 
-        <div id="part3" class="visContainer">
+        <!-- <div id="part3" class="visContainer">
             <h2>Household Spending Distribution</h2>
             <div class="visContainer_one_column">
                 <div id="view3"></div>
                 <button id="backButton">Back</button>
                 <p class="visText">We present five pie charts to illustrate the spending distribution across different income-level groups. In the previous milestone, we had too many categories, leading to too many colors and slices on the pie chart. This time, we consolidated them into six major categories. For each income group, the pie charts highlight the top five spending categories. Each slice of the pie chart is clickable, allowing users to explore the breadown of subcatefories within a selected major category. While the pie charts are now interactive, we are still working on processing subcategory data and displaying the detailed breadown in the charts.</p>
             </div>
-        </div>
+        </div> -->
        
         <div id="part4" class="visContainer">
             <h2>Weighted CPI Growth vs Wage Growth</h2>
-            <div class="visContainer_one_column">
+            <div class="visContainer_two_columns">
                 <div id="view4"></div>
-                <p class="visText">The final chart will be a bubble chart, using bubble size and two colors to convey the impact of CPI growth rate and wage growth rate. This chart integrates wage growth rate and CPI growth rate. If the CPI growth rate exceeds the wage growth rate, the bubble will be red, indicating a negative impact. Conversely,Conversely, if the wage growth rate surpasses the CPI growth rate, the bubble will be green, representing a positive impact. The size of each bubble reflects the magnitude of the impact. <br><br>In the next progress, we will change the coordinate axes. The x-axis will represent employment classifications, while the y-axis will show the years. Users can filter the chart by selecting different income quintiles using buttons below the chart. This will highlight the corresponding bubbles, making it easy to explore the classifications within the selected group.</p>
+                <p class="visText">This bubble chart compares the CPI (Consumer Price Index) growth rate and wage growth rate across different occupations over the past five years. The chart uses color coding: green bubbles indicate that the wage growth rate exceeds the CPI growth rate (positive effect), while red bubbles signify the opposite (negative effect). Here are some insights: <br><br>
+                From 2020 to 2021, all occupations exhibited positive effects, with wage growth outpacing inflation.At the start of 2020, the COVID-19 pandemic caused a big drop in global demand. People stayed home and spent less on non-essential items like travel and entertainment. This kept inflation low, meaning prices didn’t rise much.<br><br>
+                However, from 2022 to 2023, some occupations experienced negative effects. For example,
+                in Educational Services, wage growth over two years lagged behind CPI growth.
+                Similarly, Health Care and Social Assistance also saw a negative impact over the same period.
+            </p>
             </div>
         </div>
     </main>
-    <script type="module" src="../355_FinalProject/vis.js"></script>
+    <script type="module" src="vis.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+<!-- -------------------------------------initial---------------------------------------- -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAT355_FinalProject</title>
+
+    <link rel="stylesheet" type="text/css" href="css/vis.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite-api@5.6.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    <script>
+        const options = {
+          config: {},
+          init: (view) => {
+            view.tooltip(new vegaTooltip.Handler().call);
+          },
+          view: {
+            loader: vega.loader({ baseURL: "https://cdn.jsdelivr.net/npm/vega-datasets@2/" }),
+            renderer: "canvas",
+          },
+        };
+  
+        vl.register(vega, vegaLite, options);
+      </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="index.html">Z & C</a>
+            <div>
+                <a id="home_link" href="index.html">Home</a>
+                <a id="vis_link" href="vis.html">Visualizations</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>VISUALIZATIONS</h1>
+        <div class="nav_container">
+            <a href="#part1" class="nav_button">Wage Growth</a>
+            <a href="#part2" class="nav_button">CPI Growth</a>
+            <a href="#part4" class="nav_button">Wage vs CPI</a>
+        </div>
+        
+        <div>
+        <h2 id="part1">Wage Growth by Industry</h2>
+        <div class="visContainer_two_columns">
+            <div id="d1">
+                <div id="view1"></div>
+            </div>
+            <p id="vis1Text">This interactive bar chart displays the wage growth rate across various employment classifications over multiple years. The legend besides the chart is also served as the interactive button. Users can click on a single year or hold down the Shift key to select multiple years for comparison. This chart is not a stack bar chart, instead, each bar representing different classifications from different years, starts at the x-axis. This layout enables readers to easily compare values by observing the differences in bar heights. We are still thinking about highlighting the "Total employees, all industries" classification, so readers can easily compare the wage growth rate with the average growth rate of all classification.</p>
+        </div>
+
+        <h2 id="part2">CPI Growth by Category</h2>
+        <div class="visContainer_two_columns">
+            <div id="d2">
+                <div id="view2"></div>
+            </div>
+            <p id="vis2Text">The interactive line chart illustrates the CPI growth rate across various categories, such as goods, energy, and gasoline. Similar to the bar chart, the legend on the right side also functions as an interactive control. Users can click on a single category or hold down the Shift key to select multiple categories for comparsion. </p>  
+        </div>
+       
+
+        <h2 id="part4">Weighted CPI Growth vs Wage Growth</h2>
+        <div class="visContainer_one_column">
+            <div id="view4"></div>
+            <p class="visText">The final chart will be a bubble chart, using bubble size and two colors to convey the impact of CPI growth rate and wage growth rate. This chart integrates wage growth rate and CPI growth rate. If the CPI growth rate exceeds the wage growth rate, the bubble will be red, indicating a negative impact. Conversely,Conversely, if the wage growth rate surpasses the CPI growth rate, the bubble will be green, representing a positive impact. The size of each bubble reflects the magnitude of the impact. <br><br>In the next progress, we will change the coordinate axes. The x-axis will represent employment classifications, while the y-axis will show the years. Users can filter the chart by selecting different income quintiles using buttons below the chart. This will highlight the corresponding bubbles, making it easy to explore the classifications within the selected group.</p>
+        </div>
+        
+    </main>
+    <script type="module" src="vis.js"></script>
+</body>
+</html> -->

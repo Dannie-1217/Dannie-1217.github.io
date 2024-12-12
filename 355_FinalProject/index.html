@@ -33,15 +33,15 @@
                 <div class="icon_container grid icon_grid">
                     <div class="icons">
                         <img class="icon" src="img/save.jpg" width="1200" height="1200" alt="save money">
-                        <p class="icon_text">Wage Growth</p>
+                        <p class="icon_text">Wage<br>Growth</p>
                     </div>
                     <div class="icons">
-                        <img class="icon" src="img/pay.jpg" width="1200" height="1200" alt="save money">
-                        <p class="icon_text">CPI Growth</p>
+                        <img class="icon" src="img/pay.png" width="1200" height="1200" alt="save money">
+                        <p class="icon_text">CPI<br>Growth</p>
                     </div>
                     <div class="icons">
                         <img class="icon" src="img/distribution.png" width="2048" height="2048" alt="save money">
-                        <p class="icon_text">Spending Distribution</p>
+                        <p class="icon_text">Spending<br>Distribution</p>
                     </div>
                 </div>
             </div>
@@ -55,21 +55,57 @@
     </header>
 
     <main>
-        <h2>Canada's Inflation Rate Hits A Fresh 18-year High in 2021</h2>
-        <div class="main_container grid main_container_grid">
-            <div>
-                <img src="img/Image2.png" width="2586" height="3464" alt="Grocery food" id="image2">
-            </div>
+        <div class="curve_block"></div>
+        <div class="main_container">
+            <div class="main_info  grid main_container_grid">
+                <h2>Canada's Inflation Rate Hits A Fresh 18-year High in 2021</h2>
             <div class="main_right">
-                <p class="main_text">In September 2021, Canada's annual inflation rate climbed to 4.4%, marking its highest level since February 2003, up from 4.1% in August. The surge in inflation was driven by significant price hikes in key sectors, including transport, housing, and food. As everyday costs rise, Canadians are feeling the impact on their wallets, raising the important question: Are wages keeping up with the increasing cost of living? Let’s take a deeper look at how wage growth compares to this inflationary pressure.</p>
-                <div class="button_div">
-                    <a class="button" href="vis.html">Explore</a>
+                <p class="main_text">In September 2021, Canada's annual inflation rate climbed to 4.4%, marking its highest level since February 2003, up from 4.1% in August. The surge in inflation was driven by significant price hikes in key sectors, including transport, housing, and food. As everyday costs rise, Canadians are feeling the impact on their wallets, raising the important question: Are wages keeping up with the increasing cost of living?</p>
+            </div>
+        </div>
+        </div>
+
+        <div>
+            <h2>What We Focus on</h2>
+            <div class="focus_container grid thumbnail_grid">
+                <div>
+                    <a href="vis.html#part1" class="vis_detail_link">
+                        <div class="thumbnail_container">
+                            <img class="thumbnail" id="thumbnail1" src="img/bar.jpg" width="200" height="200" alt="thumbnail for the bar chart">
+                        </div>
+                    </a>
+                    <p><b>Wage Growth</b><br>Explore the wage growth rate across various employment classifications with our interactive bar chart</p>
+                </div>
+                <div>
+                    <a href="vis.html#part2" class="vis_detail_link">
+                        <div class="thumbnail_container">
+                            <img class="thumbnail" src="img/line.jpg" width="200" height="200" alt="thumbnail for the line chart">
+                        </div>
+                    </a>
+                    <p><b>CPI Growth</b><br>View the CPI growth rate across different categories such as goods, energy, and gasoline with our interactive line chart</p>
+                </div>
+                <div>
+                    <a href="vis.html#part4" class="vis_detail_link"s>
+                        <div class="thumbnail_container">
+                            <img class="thumbnail" src="img/bubble.jpg" width="200" height="200" alt="thumbnail for the bubble chart">
+                        </div>
+                    </a>
+                    <p><b>Wage vs CPI</b><br>Visualize the impact of wage and CPI growth rates with our interactive bubble chart.</p>
                 </div>
             </div>
-
+            <div class="start grid start_grid">
+                <div>
+                    <h2 id="start_title">Discover the stories behind the data</h2>
+                    <p>Explore our interactive visualizations to see the trends come to life!</p>
+                    <div id="center_button">
+                        <a class="button" href="vis.html">Explore</a>
+                    </div>
+                </div>
+                <img class=start_img src="img/analysis.png" width="3876" height="3460" alt="a collection of different types of Visualizations">
+            </div>
         </div>
 
     </main>
-    
+    <script src="img.js"></script>
 </body>
 </html>

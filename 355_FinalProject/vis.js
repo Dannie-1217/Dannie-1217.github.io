@@ -1265,7 +1265,7 @@ async function render1(newWageData) {
   // Define Vega-Lite specification
   const vlSpec = {
     $schema: "https://vega.github.io/schema/vega-lite/v5.json",
-    title: "Wage by Classification and Year",
+    title: "Wage by Occupational Classification and Year",
     data: { values: newWageData },
     width: 700,
     height: 400,
@@ -1274,7 +1274,7 @@ async function render1(newWageData) {
       x: {
         field: "North American Industry Classification System (NAICS)",
         type: "nominal",
-        title: "Classification",
+        title: "Occupational Classification",
         // axis: { labelAngle: -45 },
         sort: {
           field: "Wage", 

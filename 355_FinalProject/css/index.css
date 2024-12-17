@@ -189,12 +189,13 @@ body{
         margin-right: auto;
     }
     
-    .thumbnail_container{
-        border: 1px solid #D3D0C9; 
+    .thumbnail_container {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
         border-radius: 20px;
         overflow: hidden;
-        transition: border scale 0.3s ease;
+        transition: box-shadow 0.3s ease, transform 0.3s ease; 
         transform: scale(1);
+        margin-bottom: 1.5rem;
     }
     
     
@@ -264,7 +265,7 @@ body{
 
     
     .vis_detail_link:hover .thumbnail_container {
-        border: 3px solid #f44e21;
+        box-shadow: 0 0 12px rgba(255, 118, 39, 1);
         transform: scale(1.08);
     }
 
@@ -447,17 +448,9 @@ body{
     }
     
     .focus_container{
-        width:80%;
+        width:70%;
         margin-left: auto;
         margin-right: auto;
-    }
-    
-    .thumbnail_container{
-        border: 2px solid #D3D0C9; 
-        border-radius: 20px;
-        overflow: hidden;
-        transition: border scale 0.3s ease;
-        transform: scale(1);
     }
     
     
@@ -507,6 +500,7 @@ body{
         text-align: left;
         font-family: 'Mandali', Verdana, sans-serif;
         letter-spacing: 0;
+        font-size: 1.5rem;
     }
     
     .start p{
@@ -517,12 +511,9 @@ body{
         margin-bottom: 2rem;
         width:100%;
         text-align: left;
+        font-size: 1rem;
     }
     
-    .vis_detail_link:hover .thumbnail_container {
-        border: 3px solid #f44e21;
-        transform: scale(1.08);
-    }
 
     #center_button{
         margin-left:0;
@@ -706,17 +697,9 @@ h2{
 }
 
 .focus_container{
-    width:80%;
+    width:60%;
     margin-left: auto;
     margin-right: auto;
-}
-
-.thumbnail_container{
-    border: 2px solid #D3D0C9; 
-    border-radius: 20px;
-    overflow: hidden;
-    transition: border scale 0.3s ease;
-    transform: scale(1);
 }
 
 
@@ -765,6 +748,7 @@ h2{
 #start_title{
     text-align: left;
     font-family: 'Mandali', Verdana, sans-serif;
+    font-size: 2rem;
 }
 
 .start p{
@@ -773,12 +757,9 @@ h2{
     line-height: 1.5;
     font-family: 'Lato', Verdana, sans-serif;
     margin-bottom: 2rem;
+    font-size: 1.3rem;
 }
 
-.vis_detail_link:hover .thumbnail_container {
-    border: 3px solid #f44e21;
-    transform: scale(1.08);
-}
 }
 
 

@@ -1319,7 +1319,8 @@ async function render1(newWageData) {
       yearSelection: {
         type: "multi",
         fields: ["Year"],
-        bind: "legend"
+        bind: "legend",
+        init: [{ Year: "2019" }, { Year: "2023" }]
       }
     },
     transform: [

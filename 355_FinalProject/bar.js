@@ -1,7 +1,8 @@
-const images = ["img/bar.jpg","img/bar2.jpg"];
+const images = ["img/bar1.jpg","img/bar2.jpg","img/bar3.jpg"];
 let currentImageIndex = 0;
 
 const thumbnail = document.getElementById("thumbnail1");
+thumbnail.src = images[currentImageIndex];
 
 setInterval(() => {
     thumbnail.classList.add("hidden");
